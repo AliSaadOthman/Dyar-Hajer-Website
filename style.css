@@ -1422,14 +1422,24 @@ a:active {
 ## Logo
 --------------------------------------------------------------*/
 #site-logo {
-  min-width: 200px;
+  min-width: 110px;
   display: inline-flex;
   vertical-align: middle;
   align-items: center;
   line-height: 1;
 }
+#site-logo p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  font-size: normal;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  margin: 0;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+}
 #site-logo img {
-  height: 90px;
+  height: 84px;
 }
 #site-logo img.logo-static {
   display: block;
@@ -2169,10 +2179,24 @@ a:active {
   }
 
   .header_mobile .mlogo_wrapper {
+    display: flex;
     position: relative;
+    align-items: center;
   }
   .header_mobile .mlogo_wrapper img {
     height: 90px;
+  }
+  .header_mobile .mlogo_wrapper p {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: normal;
+    font-size: normal;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    margin: 0;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+    align-content: center;
+    margin-left: 10px;
   }
 
   .header_mobile .mlogo_wrapper .mobile_logo {
@@ -4354,7 +4378,7 @@ object {
   width: 80px;
   height: 45px;
   z-index: 1;
-  background: url("https://via.placeholder.com/189x150.png") no-repeat center;
+  background: url("images/quote.svg") no-repeat center;
 }
 .ot-testimonials .ot-testimonials-slider-s2 .testi-item {
   padding-right: 0;
@@ -5596,6 +5620,8 @@ object {
 }
 .team-wrap img {
   display: block;
+  height: 500px;
+  object-fit: cover;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -6309,7 +6335,7 @@ object {
 ## Miscellaneous
 --------------------------------------------------------------*/
 .site-overlay {
-  cursor: url(https://via.placeholder.com/32x32.png) 16 16, default;
+  cursor: url(images/close.png) 16 16, default;
   background: transparent;
   width: 100vw;
   height: 100vh;
@@ -7407,9 +7433,24 @@ div.elementor-widget-heading .elementor-heading-title {
 /* Custom Side panel */
 .side-panel-block .the-logo {
   margin: 10px 0 40px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .side-panel-block .the-logo img {
-  width: 175px;
+  width: 65px;
+}
+.side-panel-block .the-logo p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  margin: 0;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  align-content: center;
+  margin-left: 20px;
 }
 .side-panel-block .ot-heading h2 {
   color: #fff;
@@ -7531,40 +7572,40 @@ section {
   background-color: #1a1a1a;
 }
 .page-header {
-  background-image: url("https://via.placeholder.com/1920x500.png");
+  background-image: url("images/backgrounds/bg-about.jpg");
 }
 .page-header-contact {
   background-image: url("https://via.placeholder.com/1920x500.png");
 }
 .pheader-service-detail1 {
-  background-image: url("https://via.placeholder.com/1920x500.png");
+  background-image: url(images/backgrounds/pheader-service-detail1.jpg);
 }
 .pheader-team {
-  background-image: url("https://via.placeholder.com/1920x500.png");
+  background-image: url("images/backgrounds/bg-team.jpg");
 }
 .pheader-services {
-  background-image: url(https://via.placeholder.com/1920x500.png);
+  background-image: url(images/backgrounds/bg-services.jpg);
 }
 .pheader-about {
-  background-image: url(https://via.placeholder.com/1920x500.png);
+  background-image: url(images/backgrounds/bg-about.jpg);
 }
 .pheader-process {
-  background-image: url(https://via.placeholder.com/1920x500.png);
+  background-image: url(images/backgrounds/bg-process.jpg);
 }
 .pheader-studio {
-  background-image: url(https://via.placeholder.com/1920x500.png);
+  background-image: url(images/backgrounds/bg-studio.jpg);
 }
 .pheader-typo {
   background-image: url(https://via.placeholder.com/1920x500.png);
 }
 .pheader-faq {
-  background-image: url(https://via.placeholder.com/1920x500.png);
+  background-image: url(images/backgrounds/bg-faq.jpg);
 }
 .pheader-portfolio {
-  background-image: url(https://via.placeholder.com/1920x500.png);
+  background-image: url(images/backgrounds/bg-portfolio);
 }
 .pheader-portfolio-detail {
-  background-image: url(https://via.placeholder.com/1920x500.png);
+  background-image: url(images/backgrounds/bg-portfolio);
 }
 
 /* Post */
@@ -7648,7 +7689,7 @@ section {
 }
 .principes {
   background-color: #f4f4f4;
-  background-image: url(https://via.placeholder.com/411x610.png);
+  background-image: url(images/backgrounds/bg1-service.png);
   background-position: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -7686,40 +7727,40 @@ section {
   margin-bottom: 20px;
 }
 .icon-bg-1 {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox1.jpg);
 }
 .icon-bg-2 {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox2.jpg);
 }
 .icon-bg-3 {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox3.jpg);
 }
 .icon-bg-4 {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox1.jpg);
 }
 .icon-bg-5 {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox2.jpg);
 }
 .icon-bg-6 {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox3.jpg);
 }
 .icon-bg-1:hover {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox1-hover.jpg);
 }
 .icon-bg-2:hover {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox2-hover.jpg);
 }
 .icon-bg-3:hover {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox3-hover.jpg);
 }
 .icon-bg-4:hover {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox1-hover.jpg);
 }
 .icon-bg-5:hover {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox2-hover.jpg);
 }
 .icon-bg-6:hover {
-  background-image: url(https://via.placeholder.com/715x628.png);
+  background-image: url(images/home/services/bg-iconbox3-hover.jpg);
 }
 .services-feature {
   background-color: #1a1a1a;
@@ -7728,10 +7769,10 @@ section {
 .icon-box.s2 {
   padding: 39px 2px 19px 2px;
   margin-bottom: 30px;
-  background-image: url(https://via.placeholder.com/169x169.png);
+  background-image: url(images/services/bg2-service.jpg);
 }
 .icon-box.s2:hover {
-  background-image: url(https://via.placeholder.com/169x169.png);
+  background-image: url(images/services/bg2-hservice.jpg);
 }
 .icon-box.s2 .icon-main {
   color: #fff;
@@ -7791,7 +7832,7 @@ section {
   margin-bottom: 40px;
 }
 .our-philosophy {
-  background-image: url(https://via.placeholder.com/1920x705.png);
+  background-image: url(images/backgrounds/bg1-aboutus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -7802,7 +7843,7 @@ section {
   border-color: #fff;
 }
 .about-counter {
-  background-image: url(https://via.placeholder.com/1900x200.png);
+  background-image: url(images/backgrounds/bg2-aboutus.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7821,7 +7862,7 @@ section {
   display: inherit;
 }
 .about-team {
-  background-image: url(https://via.placeholder.com/1920x975.png);
+  background-image: url(images/backgrounds/bg2-home1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7873,7 +7914,7 @@ section {
     hue-rotate(0deg);
 }
 .section-team-list {
-  background-image: url(https://via.placeholder.com/1920x1577.png);
+  background-image: url(images/backgrounds/bg2-home1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7968,7 +8009,7 @@ section {
 }
 /* Our process */
 .our-process {
-  background-image: url(https://via.placeholder.com/1920x1612.png);
+  background-image: url(images/backgrounds/bg1-process.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -7977,7 +8018,7 @@ section {
   margin-bottom: 50px;
 }
 .process-step {
-  background-image: url(https://via.placeholder.com/1183x533.png);
+  background-image: url(images/backgrounds/bg2-process.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8011,12 +8052,12 @@ section {
 }
 .process-news {
   background-color: #f4f4f4;
-  background-image: url(https://via.placeholder.com/412x533.png);
+  background-image: url(images/backgrounds/bg2-process.png);
   background-position: 100% 100%;
   background-repeat: no-repeat;
 }
 .our-studio-detail {
-  background-image: url(https://via.placeholder.com/375x375.png);
+  background-image: url(images/backgrounds/bg1-studio.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8075,7 +8116,7 @@ section {
   border-color: #ddd;
 }
 .progress-studio {
-  background-color: #1a1a1a;
+  background-image: url(images/backgrounds/bg2-studio.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8294,7 +8335,7 @@ ol.style-default li:last-child {
   background: #f5592f;
 }
 .cta {
-  background-image: url(https://via.placeholder.com/1820x325.png);
+  background-image: url(images/backgrounds/bg1-home1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 0 73px 0;
@@ -8725,7 +8766,7 @@ ol.style-default li:last-child {
   color: #9f9e9e;
 }
 .story-1 {
-  background-image: url(https://via.placeholder.com/1920x325.png);
+  background-image: url(images/backgrounds/bg1-home1.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8743,13 +8784,14 @@ ol.style-default li:last-child {
 }
 .story-author {
   padding: 0 0 0 20px;
-  background-image: url(https://via.placeholder.com/1920x325.png);
   background-position: 87% 92%;
   background-repeat: no-repeat;
 }
 .story-author img {
   display: inline-block;
   margin-right: 25px;
+  width: 25%;
+  border-radius: 50%;
 }
 .story-author .story-content {
   display: inline-block;
@@ -10399,7 +10441,7 @@ ol.style-default li:last-child {
   color: #fff;
   padding-bottom: 14px;
   padding-top: 14px;
-  line-height: 1;
+  line-height: 1.4;
 }
 .panel-cinfo li:first-child {
   padding-top: 0;
